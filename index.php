@@ -32,7 +32,7 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 	echo $row['iname'];
 }
-<br>
+
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
