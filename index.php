@@ -9,6 +9,8 @@
 		padding: 15px;
 		box-sizing: border-box;
 		height: 300px;
+		border-width:5px;  
+        border-style:groove;
 		}
 	</style>
 </head>
