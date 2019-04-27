@@ -52,7 +52,7 @@ foreach ($resultSet as $row) {
 	echo $row['price'];
 }
 ?>
-</div><div> $</div>
+$</div>
 </div>
 </body>
 </html>
