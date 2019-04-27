@@ -41,7 +41,7 @@ $result = pg_query($db,"SELECT * FROM toy");
 echo "<table>";
 while($row=pg_fetch_assoc($result)){echo "<tr>";
 echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
-echo "<td align='center' width='200'>" . $row['price'] . "</td>";
+echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
