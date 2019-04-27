@@ -38,13 +38,25 @@ $stmt = $pdo->prepare($sql);
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
+foreach ($resultSet as $row) {
+	echo $row['name'];
+}
 <div class="item">
 
 				<div class="iimage">
-					<img src="<?=$rows[$i]['image']?>" alt="">
+					foreach ($resultSet as $row) {
+	echo $row['image'];
+}
 				</div>
-				<div class="iname"><?=$rows[$i]['iname']?></div>
-				<div><?=$rows[$i]['price']?> $</div>
+				<div class="iname">
+				foreach ($resultSet as $row) {
+	echo $row['iname'];
+}
+				</div>
+				<div>
+				foreach ($resultSet as $row) {
+	echo $row['price'];
+}</div>
 			</div>
 ?>
 </body>
