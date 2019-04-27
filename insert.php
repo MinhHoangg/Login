@@ -8,7 +8,7 @@ list-style: none;
 }
 </style>
 </head>
-<body>
+<body align = "center">
 <h2>Enter data into toy table</h2>
 <ul>
 <form name="insert" action="insert.php" method="POST" >
