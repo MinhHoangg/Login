@@ -35,7 +35,7 @@ list-style: none;
 <li>Toy Name: </li><li><input type="text" name="iname" required></li>
 <li>Price ($):</li><li><input type="number" name="price" required></li>
 <li>Quantity:</li><li><input type="number" name="quantity" required></li>
-<li><input type="submit" value="Insert" onclick="alert('Hello world!')"></li>
+<li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
 </ul>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
