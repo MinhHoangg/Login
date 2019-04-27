@@ -38,8 +38,7 @@ list-style: none;
 <li><input type="submit" /></li>
 </form>
 </ul>
-<button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Black</a></button>
-
+<button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
 </body>
 </html>
 <?php
