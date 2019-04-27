@@ -4,11 +4,11 @@
 	<title>All Product</title>
 	<style type="text/css">
 		.item{
-		width:12%;
+		width:10%;
 		float: left;
-		padding: 15px;
+		padding: 10px;
 		box-sizing: border-box;
-		height: 150px;
+		height: 100px;
 		border-width:5px;  
         border-style:groove;
 		}
