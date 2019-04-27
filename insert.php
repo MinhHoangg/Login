@@ -35,7 +35,7 @@ list-style: none;
 <li>Toy Name: </li><li><input type="text" name="iname" /></li>
 <li>Price ($):</li><li><input type="number" name="price" /></li>
 <li>Quantity:</li><li><input type="number" name="quantity" /></li>
-<li><input type="submit" /></li>
+<li><input type="submit" value="Insert"></li>
 </form>
 </ul>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
