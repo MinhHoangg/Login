@@ -14,6 +14,7 @@ list-style: none;
 <form name="insert" action="insert.php" method="POST" >
 <li>Toy Name: </li><li><input type="text" name="iname" /></li>
 <li>Price ($):</li><li><input type="number" name="price" /></li>
+<li>Quantity:</li><li><input type="number" name="quantity" /></li>
 <li><input type="submit" /></li>
 </form>
 </ul>
