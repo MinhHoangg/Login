@@ -23,14 +23,22 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 	echo $row['image'];
 }
-// <br>
-// foreach ($resultSet as $row) {
-// 	echo $row['iname'];
-// }
-// <br>
-// foreach ($resultSet as $row) {
-// 	echo $row['price'];
-// }
+$stmt = $pdo->prepare($sql);
+//Thiết lập kiểu dữ liệu trả về
+$stmt->setFetchMode(PDO::FETCH_ASSOC);
+$stmt->execute();
+$resultSet = $stmt->fetchAll();
+foreach ($resultSet as $row) {
+	echo $row['iname'];
+}
+$stmt = $pdo->prepare($sql);
+//Thiết lập kiểu dữ liệu trả về
+$stmt->setFetchMode(PDO::FETCH_ASSOC);
+$stmt->execute();
+$resultSet = $stmt->fetchAll();
+foreach ($resultSet as $row) {
+	echo $row['price'];
+}
 ?>
 </body>
 </html>
