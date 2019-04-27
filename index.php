@@ -5,7 +5,13 @@
 <title>All Product</title>
 <meta name="description" content="Assignment 2">
 <style type="text/css">
+table {
+  border-collapse: collapse;
+}
 
+table, td, th {
+  border: 1px solid black;
+}
 </style>
 </head>
 <body align = "center" background="pic.jpeg">
