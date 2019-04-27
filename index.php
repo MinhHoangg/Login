@@ -25,7 +25,7 @@ $pdo = new PDO("pgsql:" . sprintf(
     ltrim($db["path"], "/")
 ));
 ?>
-<div>
+<div class="item">
 	<?php
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
@@ -33,13 +33,7 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
-	echo $row['iname'];
-}
-?>
-</div>
-<br>
-<div>
-	<?php
+	echo $row['iname' . ' '];
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
