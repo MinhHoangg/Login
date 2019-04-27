@@ -25,7 +25,7 @@ $result = pg_query($db,"SELECT * FROM toy");
 	<tr><td align='center' width='200'>Name</td><td align='center' width='200'>Price ($)</td><td align='center' width='200'>Quantity</td></tr>
 </table>
 <?php
-echo "<table>";
+echo "<table align='center'>";
 while($row=pg_fetch_assoc($result)){echo "<tr>";
 echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
 echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
