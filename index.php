@@ -4,12 +4,7 @@
 <meta charset="utf-8">
 <title>All Product</title>
 <meta name="description" content="If we want to fetch all rows from the actor table the following PostgreSQL SELECT statement can be used.">
-<style type="text/css">
-	.body{
-		border-width:5px;  
-    border-style:inset;
-	}
-</style>
+
 </head>
 <body>
 <h1>List of all toy in the ATN Shop</h1>
