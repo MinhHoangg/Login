@@ -4,9 +4,14 @@
 <meta charset="utf-8">
 <title>All Product</title>
 <meta name="description" content="If we want to fetch all rows from the actor table the following PostgreSQL SELECT statement can be used.">
-
+<style type="text/css">
+	body  {
+  background-image: url("paper.gif");
+  
+}
+</style>
 </head>
-<body align = "center">
+<body align = "center" >
 <h1>List of all toy in the ATN Shop</h1>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
