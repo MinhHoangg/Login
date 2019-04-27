@@ -23,14 +23,14 @@ $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
 	echo $row['image'];
 }
-<br>
-foreach ($resultSet as $row) {
-	echo $row['iname'];
-}
-<br>
-foreach ($resultSet as $row) {
-	echo $row['price'];
-}
+// <br>
+// foreach ($resultSet as $row) {
+// 	echo $row['iname'];
+// }
+// <br>
+// foreach ($resultSet as $row) {
+// 	echo $row['price'];
+// }
 ?>
 </body>
 </html>
