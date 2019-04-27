@@ -26,6 +26,7 @@ $pdo = new PDO("pgsql:" . sprintf(
 ));
 ?>
 <div class="item">
+<div>
 	<?php
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
@@ -33,10 +34,13 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
-	echo $row['iname' . ' - '];
-
+	echo $row['iname'];
+}
 ?>
-<?php
+</div>
+<br>
+<div>
+	<?php
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -46,6 +50,7 @@ foreach ($resultSet as $row) {
 	echo $row['price'];
 }
 ?>
+</div>
 </div>
 </body>
 </html>
