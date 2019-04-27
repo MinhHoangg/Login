@@ -32,8 +32,8 @@ list-style: none;
 <h2>Delete data from toy table</h2>
 <ul>
 <form name="delete" action="delete.php" method="POST" >
-<li>Toy Name: </li><li><input type="text" name="iname" /></li>
-<li><input type="submit" value="Delete"></li>
+<li>Toy Name: </li><li><input type="text" name="iname" required></li>
+<li><input type="submit" value="Delete" ></li>
 </form>
 </ul>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
