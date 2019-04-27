@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>All Product</title>
-<meta name="description" content="If we want to fetch all rows from the actor table the following PostgreSQL SELECT statement can be used.">
+<meta name="description" content="Assignment 2">
 <style type="text/css">
 	.button {
   background-color: #4CAF50; /* Green */
