@@ -33,7 +33,7 @@ list-style: none;
 <ul>
 <form name="delete" action="delete.php" method="POST" >
 <li>Toy Name: </li><li><input type="text" name="iname" required></li>
-<li><input type="submit" value="Delete" ></li>
+<li><input type="submit" value="Delete" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')></li>
 </form>
 </ul>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
