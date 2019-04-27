@@ -6,7 +6,7 @@
 <meta name="description" content="If we want to fetch all rows from the actor table the following PostgreSQL SELECT statement can be used.">
 
 </head>
-<body>
+<body align = "center">
 <h1>List of all toy in the ATN Shop</h1>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
