@@ -2,24 +2,6 @@
 <html>
 <head>
 	<title>All Product</title>
-	<style type="text/css">
-		.item{
-		width:25%;
-		float: left;
-		padding: 15px;
-		box-sizing: border-box;
-		height: 550px;
-
-		}
-	.iname{
-			font-size: 25px;
-			font-weight: bold;
-		}
-	.iimage img{
-			width: 100%;
-			height:350px;		
-		}
-	</style>
 </head>
 <body>
 <?php 
@@ -39,25 +21,16 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
-	echo $row['name'];
-}
-<div class="item">
-
-				<div class="iimage">
-					foreach ($resultSet as $row) {
 	echo $row['image'];
 }
-				</div>
-				<div class="iname">
-				foreach ($resultSet as $row) {
+<br>
+foreach ($resultSet as $row) {
 	echo $row['iname'];
 }
-				</div>
-				<div>
-				foreach ($resultSet as $row) {
+<br>
+foreach ($resultSet as $row) {
 	echo $row['price'];
-}</div>
-			</div>
+}
 ?>
 </body>
 </html>
