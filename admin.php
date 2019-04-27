@@ -27,7 +27,7 @@
 }
 </style>
 </head>
-<body align = "center">
+<body align = "center" background="pic.jpeg">
 <h1>Admin Page of ATN Shop</h1>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
