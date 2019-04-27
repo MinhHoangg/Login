@@ -31,16 +31,16 @@ list-style: none;
 <body align = "center" background="pic.jpeg">
 <h2>Enter data into toy table</h2>
 <ul>
-<div align="center">
 <form name="insert" action="insert.php" method="POST">
 <li>Toy Name: </li><li><input type="text" name="iname" required></li>
 <li>Price ($):</li><li><input type="number" name="price" required></li>
 <li>Quantity:</li><li><input type="number" name="quantity" required></li>
 <li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
-</div>
 </ul>
+<div align="center">
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
+</div>
 </body>
 </html>
 <?php
