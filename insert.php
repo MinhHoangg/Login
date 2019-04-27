@@ -32,9 +32,9 @@ list-style: none;
 <h2>Enter data into toy table</h2>
 <ul>
 <form name="insert" action="insert.php" method="POST" >
-<li>Toy Name: </li><li><input type="text" name="iname" /></li>
-<li>Price ($):</li><li><input type="number" name="price" /></li>
-<li>Quantity:</li><li><input type="number" name="quantity" /></li>
+<li>Toy Name: </li><li><input type="text" name="iname" required></li>
+<li>Price ($):</li><li><input type="number" name="price" required></li>
+<li>Quantity:</li><li><input type="number" name="quantity" required></li>
 <li><input type="submit" value="Insert"></li>
 </form>
 </ul>
