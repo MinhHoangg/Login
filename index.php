@@ -6,8 +6,7 @@
 <meta name="description" content="If we want to fetch all rows from the actor table the following PostgreSQL SELECT statement can be used.">
 <style type="text/css">
 	body  {
-  background-image: url("paper.gif");
-  
+  background-image: url("pic.png");
 }
 </style>
 </head>
