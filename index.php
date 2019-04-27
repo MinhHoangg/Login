@@ -33,7 +33,10 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 foreach ($resultSet as $row) {
-	echo $row['iname' . ' '];
+	echo $row['iname' . ' - '];
+
+?>
+<?php
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
