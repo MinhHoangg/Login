@@ -16,7 +16,7 @@ $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
 $result = pg_query($db,"SELECT * FROM toy");
 ?>
 <table>
-	<tr><td align='center' width='200'>Name</td><td align='center' width='200'>Price</td><td align='center' width='200'>Quantity</td></tr>
+	<tr><td align='center' width='200'>Name</td><td align='center' width='200'>Price ($)</td><td align='center' width='200'>Quantity</td></tr>
 </table>
 <?php
 echo "<table>";
