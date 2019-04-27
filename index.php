@@ -1,58 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>All Product</title>
-	<style type="text/css">
-		.item{
-		width:10%;
-		float: left;
-		padding: 10px;
-		box-sizing: border-box;
-		height: 100px;
-		border-width:5px;  
-        border-style:groove;
-		}
-	</style>
+<meta charset="utf-8">
+<title>All Product</title>
+<meta name="description" content="If we want to fetch all rows from the actor table the following PostgreSQL SELECT statement can be used.">
 </head>
 <body>
-<?php 
-$sql = "SELECT * FROM toy";
-$db = parse_url(getenv("DATABASE_URL"));
-$pdo = new PDO("pgsql:" . sprintf(
-    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-    $db["host"],
-    $db["port"],
-    $db["user"],
-    $db["pass"],
-    ltrim($db["path"], "/")
-));
-?>
-<div class="item">
-<div>
-	<?php
-$stmt = $pdo->prepare($sql);
-//Thiết lập kiểu dữ liệu trả về
-$stmt->setFetchMode(PDO::FETCH_ASSOC);
-$stmt->execute();
-$resultSet = $stmt->fetchAll();
-foreach ($resultSet as $row) {
-	echo $row['iname'];
-}
-?>
-</div>
-<br>
-<div>
-	<?php
-$stmt = $pdo->prepare($sql);
-//Thiết lập kiểu dữ liệu trả về
-$stmt->setFetchMode(PDO::FETCH_ASSOC);
-$stmt->execute();
-$resultSet = $stmt->fetchAll();
-foreach ($resultSet as $row) {
-	echo $row['price'];
-}
-?>
-$</div>
+<h1>List of all actors in the table</h1>
+<?php
+$db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
+ port=5432 dbname=d8sto9amrrhb0v user=bsodvujawdtmnt password=e5eb56a54ac2393fca0715e5f0d9e4e8c5c1b5cee85b45edf957bb2c30fbcc4b");
+$result = pg_query($db,"SELECT * FROM toy");
+echo "<table>";
+while($row=pg_fetch_assoc($result)){echo "<tr>";
+echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
+echo "<td align='center' width='200'>" . $row['price'] . "</td>";
+echo "</tr>";}echo "</table>";?>
 </div>
 </body>
 </html>
