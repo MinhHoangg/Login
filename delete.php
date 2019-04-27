@@ -8,7 +8,7 @@ list-style: none;
 }
 </style>
 </head>
-<body>
+<body align = "center">
 <h2>Delete data from toy table</h2>
 <ul>
 <form name="delete" action="delete.php" method="POST" >
