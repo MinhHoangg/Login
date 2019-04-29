@@ -34,12 +34,6 @@ table, td, th {
   background-color: #DC143C;
   color: white;
 }
-.fixed{
-    position: fixed;
-    width: 25%;
-    bottom: 0px;
-    right: 0px;
-  }
 </style>
 </head>
 <body align = "center" background="img/pic.png">
@@ -59,11 +53,6 @@ echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
 echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "</tr>";}echo "</table>";?>
-</div>
-<div class="fixed">
-  <video width="320" height="240" autoplay loop>
-    <source src="img/video.mp4" type="video/mp4">
-  </video>
 </div>
 </body>
 </html>
