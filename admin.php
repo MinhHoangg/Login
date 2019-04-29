@@ -58,8 +58,8 @@ table, td, th {
   color: white;}
   .fixed{
   position: fixed;
-  top: 0px;
-  right: 50%;
+  top: 15px;
+  right: 15px;
 }
 </style>
 </head>
