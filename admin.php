@@ -87,7 +87,6 @@ echo "</tr>";}echo "</table>";?>
 <div class="fixed">
   <video width="320" height="240" autoplay loop>
     <source src="img/video.mp4" type="video/mp4">
-    <source src="img/video.ogg" type="video/ogg">
   </video>
 </div>
 </body>
