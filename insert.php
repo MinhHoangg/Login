@@ -37,26 +37,26 @@ list-style: none;
 <body align = "center" background="img/pic.jpeg">
 <h2>Enter data into toy table</h2>
 <ul>
-<form name="insert" action="insert.php" method="POST">
+<!-- <form name="insert" action="insert.php" method="POST">
 <li>Toy Name: </li><li><input type="text" name="iname" required></li>
 <li>Price ($):</li><li><input type="number" name="price" required></li>
 <li>Quantity:</li><li><input type="number" name="quantity" required></li>
 <li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
-</form>
+</form> -->
 <div class="w3-container w3-blue">
   <h2>Enter data into toy table</h2>
 </div>
 
-<form class="w3-container">
+<form class="w3-container" name="insert" action="insert.php" method="POST">
   <p>
   <label>Toy Name</label>
-  <input class="w3-input" type="text" required></p>
+  <input class="w3-input" type="text" name="iname" required></p>
   <p>
   <label>Price ($)</label>
-  <input class="w3-input" type="number" required></p>
+  <input class="w3-input" type="number" name="price" required></p>
   <p>
   <label>Quantity</label>
-  <input class="w3-input" type="number" required></p>
+  <input class="w3-input" type="number" name="quantity" required></p>
   <li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
 </ul>
