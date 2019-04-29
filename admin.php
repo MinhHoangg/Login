@@ -77,7 +77,7 @@ echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
-<button class="button button5"><a href="https://parkboyoung.herokuapp.com/insert.php">Insert Page</a></button>
-<button class="button button5"><a href="https://parkboyoung.herokuapp.com/delete.php">Delete Page</a></button>
+<form class="w3-container" action="insert.php" method="POST"><button class="button button5">Insert Page</button></form>
+<form class="w3-container" action="delete.php" method="POST"><button class="button button5">Delete Page</button></form>
 </body>
 </html>
