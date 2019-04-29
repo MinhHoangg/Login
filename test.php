@@ -51,7 +51,7 @@ echo "<table align='center' id='customers'>";
 while($row=pg_fetch_assoc($result)){echo "<tr>";
 echo "<td align='center' width='200'>" . $row['id'] . "</td>";
 echo "<td align='center' width='200'>" . $row['name'] . " $" . "</td>";
-echo "<td align='center' width='200'>" . "<img src='<?=$row['image'];?>'>" . "</td>";
+echo "<td align='center' width='200'>" . ?><img src='<?php $row['image'] ?>'>"<?php . "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
 </body>
