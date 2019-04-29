@@ -10,7 +10,7 @@
 }
 
 table, td, th {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 	.button {
   background-color: #4CAF50; /* Green */
