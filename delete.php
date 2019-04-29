@@ -2,6 +2,8 @@
 <head>
 <title>Delete</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 li {
 list-style: none;
@@ -33,11 +35,20 @@ list-style: none;
 </style>
 </head>
 <body align = "center" background="img/pic.jpeg">
-<h2>Delete data from toy table</h2>
 <ul>
-<form name="delete" action="delete.php" method="POST" >
+<!-- <form name="delete" action="delete.php" method="POST" >
 <li>Toy Name: </li><li><input type="text" name="iname" required></li>
 <li><input type="submit" value="Delete" onclick="alert('Deleted successfully if you nhập mọi thứ tử tế :))')"></li>
+</form> -->
+<div class="w3-container w3-blue">
+  <h2>Delete data from toy table</h2>
+</div>
+<form class="w3-container" name="delete" action="delete.php" method="POST">
+  <p>
+  <label>Toy Name</label>
+  <input class="w3-input" type="text" name="iname" required></p>
+  <p>
+  <li><input type="submit" value="Delete" onclick="alert('Deleted successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
 </ul>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
