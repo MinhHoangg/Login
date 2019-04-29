@@ -85,7 +85,9 @@ echo "</tr>";}echo "</table>";?>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/insert.php">Insert Page</a></button>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/delete.php">Delete Page</a></button>
 <div class="fixed">
-  ATN Company
+  <video width="320" height="240" autoplay loop>
+    <source src="img/video.mp4" type="video/mp4">
+  </video>
 </div>
 </body>
 </html>
