@@ -32,7 +32,7 @@ list-style: none;
 }
 </style>
 </head>
-<body align = "center" background="pic.jpeg">
+<body align = "center" background="img/pic.jpeg">
 <h2>Delete data from toy table</h2>
 <ul>
 <form name="delete" action="delete.php" method="POST" >
