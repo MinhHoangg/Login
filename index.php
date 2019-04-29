@@ -12,6 +12,28 @@ table {
 table, td, th {
   border: 1px solid black;
 }
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
 </style>
 </head>
 <body align = "center" background="pic.jpeg">
@@ -25,7 +47,7 @@ $result = pg_query($db,"SELECT * FROM toy");
 	<tr><td align='center' width='200'>Name</td><td align='center' width='200'>Price ($)</td><td align='center' width='200'>Quantity</td></tr>
 </table>
 <?php
-echo "<table align='center'>";
+echo "<table align='center' id='customers'>";
 while($row=pg_fetch_assoc($result)){echo "<tr>";
 echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
 echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
