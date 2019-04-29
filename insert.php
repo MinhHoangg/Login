@@ -58,7 +58,7 @@ list-style: none;
   <input class="w3-input" type="number" name="quantity" required></p>
   <p>
   <label>Image</label>
-  <input class="w3-input" value="img/" name="image" required></p>
+  <input class="w3-input" value="img/" type="file" src="img/*" name="image" required></p>
   <li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
 </ul>
