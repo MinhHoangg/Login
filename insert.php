@@ -59,7 +59,6 @@ list-style: none;
   <p>
   <label>Image</label>
   <input class="w3-input" type="text" name="image" required></p>
-
   <li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
 </ul>
@@ -71,6 +70,6 @@ list-style: none;
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
  port=5432 dbname=d8sto9amrrhb0v user=bsodvujawdtmnt password=e5eb56a54ac2393fca0715e5f0d9e4e8c5c1b5cee85b45edf957bb2c30fbcc4b");
-$query = "INSERT INTO toy VALUES ('$_POST[iname]','$_POST[price]','$_POST[quantity]', '$_POST[image]')";
+$query = "INSERT INTO toy VALUES ('$_POST[iname]','$_POST[price]','$_POST[quantity]','$_POST[image]')";
 $result = pg_query($query); 
 ?>
