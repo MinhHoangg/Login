@@ -51,7 +51,7 @@ list-style: none;
   <li><input type="submit" value="Delete" onclick="alert('Deleted successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
 </ul>
-<button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
+<form class="w3-container" action="index.php" method="POST"><button class="button button5">Product Page</button></form>
 </body>
 </html>
 <?php
