@@ -32,7 +32,7 @@ list-style: none;
 }
 </style>
 </head>
-<body align = "center" background="pic.jpeg">
+<body align = "center" background="img/pic.jpeg">
 <h2>Enter data into toy table</h2>
 <ul>
 <form name="insert" action="insert.php" method="POST">
