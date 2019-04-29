@@ -44,7 +44,7 @@ $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
 $result = pg_query($db,"SELECT * FROM toy");
 ?>
 <table align="center" id="customers">
-	<tr><td align='center' width='200'>Name</td><td align='center' width='200'>Price ($)</td><td align='center' width='200'>Quantity</td></tr>
+	<tr><th align='center' width='200'>Name</th><th align='center' width='200'>Price ($)</th><th align='center' width='200'>Quantity</th></tr>
 </table>
 <?php
 echo "<table align='center' id='customers'>";
