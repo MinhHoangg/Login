@@ -31,6 +31,10 @@ table, td, th {
   color: black;
   border: 2px solid #555555;
 }
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
