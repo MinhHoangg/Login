@@ -56,12 +56,6 @@ table, td, th {
   text-align: center;
   background-color: #DC143C;
   color: white;}
-  .fixed{
-    position: fixed;
-    width: 25%;
-    bottom: 0px;
-    right: 0px;
-  }
 </style>
 </head>
 <body align = "center" background="img/pic.png">
@@ -84,10 +78,5 @@ echo "</tr>";}echo "</table>";?>
 </div>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/insert.php">Insert Page</a></button>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/delete.php">Delete Page</a></button>
-<div class="fixed">
-  <video width="320" height="240" autoplay loop>
-    <source src="img/video.mp4" type="video/mp4">
-  </video>
-</div>
 </body>
 </html>
