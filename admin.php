@@ -56,10 +56,25 @@ table, td, th {
   text-align: center;
   background-color: #DC143C;
   color: white;}
+  .fixed{
+  position: fixed;
+  top: 0px;
+  right: 50%;
+}
 </style>
 </head>
 <body align = "center" background="img/pic.png">
 <h1>Admin Page of ATN Shop</h1>
+<table class="fixed">
+  <tr>
+    <td>
+      <form class="w3-container" action="insert.php" method="POST"><button class="button button5">Insert Page</button></form>
+    </td>
+    <td>
+      <form class="w3-container" action="delete.php" method="POST"><button class="button button5">Delete Page</button></form>
+    </td>
+  </tr>
+</table>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
  port=5432 dbname=d8sto9amrrhb0v user=bsodvujawdtmnt password=e5eb56a54ac2393fca0715e5f0d9e4e8c5c1b5cee85b45edf957bb2c30fbcc4b");
@@ -77,7 +92,5 @@ echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
-<form class="w3-container" action="insert.php" method="POST"><button class="button button5">Insert Page</button></form>
-<form class="w3-container" action="delete.php" method="POST"><button class="button button5">Delete Page</button></form>
 </body>
 </html>
