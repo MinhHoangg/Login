@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>All Product</title>
+<title>Admin Page</title>
 <meta name="description" content="Assignment 2">
 <style type="text/css">
   table {
