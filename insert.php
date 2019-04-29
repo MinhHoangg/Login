@@ -2,6 +2,8 @@
 <head>
 <title>Insert</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 li {
 list-style: none;
@@ -40,6 +42,22 @@ list-style: none;
 <li>Price ($):</li><li><input type="number" name="price" required></li>
 <li>Quantity:</li><li><input type="number" name="quantity" required></li>
 <li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
+</form>
+<div class="w3-container w3-blue">
+  <h2>Enter data into toy table</h2>
+</div>
+
+<form class="w3-container">
+  <p>
+  <label>Toy Name</label>
+  <input class="w3-input" type="text" required></p>
+  <p>
+  <label>Price ($)</label>
+  <input class="w3-input" type="number" required></p>
+  <p>
+  <label>Quantity</label>
+  <input class="w3-input" type="number" required></p>
+  <li><input type="submit" value="Insert" onclick="alert('Added successfully if you nhập mọi thứ tử tế :))')"></li>
 </form>
 </ul>
 <div align="center">
