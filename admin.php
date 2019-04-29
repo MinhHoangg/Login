@@ -66,7 +66,7 @@ $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
 $result = pg_query($db,"SELECT * FROM toy");
 ?>
 <table align="center" id="customers">
-	<tr><th align='center' width='200'>Name</th><th align='center' width='200'>Price ($)</th><th align='center' width='200'>Quantity</th></tr>
+	<tr><th align='center' width='200'>Name</th><th align='center' width='200'>Price ($)</th><th align='center' width='200'>Quantity</th><th align='center' width='200'>Image</th></tr>
 </table>
 <?php
 echo "<table align='center' id='customers'>";
@@ -74,6 +74,7 @@ while($row=pg_fetch_assoc($result)){echo "<tr>";
 echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
 echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
+echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
 <button class="button button5"><a href="https://parkboyoung.herokuapp.com/insert.php">Insert Page</a></button>
