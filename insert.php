@@ -63,7 +63,7 @@ list-style: none;
 </form>
 </ul>
 <div align="center">
-<button class="button button5"><a href="https://parkboyoung.herokuapp.com/index.php">Product Page</a></button>
+  <form class="w3-container" action="index.php" method="POST"><button class="button button5">Product Page</button></form> 
 </div>
 </body>
 </html>
