@@ -36,7 +36,7 @@ table, td, th {
 }
 </style>
 </head>
-<body align = "center" background="pic.png">
+<body align = "center" background="img/pic.png">
 <h1>List of all toy in the ATN Shop</h1>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
