@@ -31,7 +31,7 @@ table, td, th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #4CAF50;
+  background-color: #DC143C;
   color: white;
 }
 </style>
