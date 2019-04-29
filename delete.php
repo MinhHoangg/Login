@@ -26,6 +26,10 @@ list-style: none;
   color: black;
   border: 2px solid #555555;
 }
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
 </style>
 </head>
 <body align = "center" background="pic.jpeg">
