@@ -19,7 +19,7 @@ table, td, th {
 }
 
 #customers td, #customers th {
-  border: 1px solid #ddd;
+  border: 1px solid #FFFFFF;
   padding: 8px;
 }
 
