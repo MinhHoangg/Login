@@ -88,7 +88,7 @@ table, td, th {
 </style>
 </head>
 <div>
-<body align = "center" background="img/pic.png">
+<body align = "center">
 <h1>List of all toy in the ATN Shop</h1>
 <div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5">Refresh</button></form></div>
 <div class="fixed2"><button id="start-btn">Snap!</button></div>
