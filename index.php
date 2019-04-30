@@ -88,8 +88,7 @@ table, td, th {
 }
 </style>
 </head>
-<body align = "center" background="img/pic.png">
-<div class="content">
+<body align = "center" background="img/pic.png" class="content">
 <h1 id="start-btn">List of all toy in the ATN Shop</h1>
 <div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5">Refresh</button></form></div>
 <div class="fixed2"><button id="start-btn">Snap!</button></div>
@@ -109,7 +108,6 @@ echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
-</div>
 <script> 
     
     var imageDataArray = [];
