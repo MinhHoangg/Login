@@ -84,26 +84,26 @@ table, td, th {
 }
 </style>
 </head>
-<div class="content">
+<div class="content" id="start-btn">
 <body align = "center" background="img/pic.png">
-<h1>List of all toy in the ATN Shop</h1>
-<div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5">Refresh</button></form></div>
+<h1 id="start-btn">List of all toy in the ATN Shop</h1>
+<div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5" id="start-btn">Refresh</button></form></div>
 <div class="fixed2"><form class="w3-container"><button id="start-btn" class="button button5">Thanos Snap!</button></form></div>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
  port=5432 dbname=d8sto9amrrhb0v user=bsodvujawdtmnt password=e5eb56a54ac2393fca0715e5f0d9e4e8c5c1b5cee85b45edf957bb2c30fbcc4b");
 $result = pg_query($db,"SELECT * FROM toy");
 ?>
-<table align="center" id="customers">
+<table align="center" id="customers" id="start-btn">
 	<tr><th align='center' width='200'>Name</th><th align='center' width='200'>Price ($)</th><th align='center' width='200'>Quantity</th><th align='center' width='200'>Image</th></tr>
 </table>
 <?php
-echo "<table align='center' id='customers'>";
+echo "<table align='center' id='customers' id='start-btn'>";
 while($row=pg_fetch_assoc($result)){echo "<tr>";
-echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
-echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
-echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
-echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"> <?php "</td>";
+echo "<td align='center' width='200' id='start-btn'>" . $row['iname'] . "</td>";
+echo "<td align='center' width='200' id='start-btn'>" . $row['price'] . " $" . "</td>";
+echo "<td align='center' width='200' id='start-btn'>" . $row['quantity'] . "</td>";
+echo "<td align='center' width='200' id='start-btn'>";?><img id="start-btn" src="/<?php echo $row['image']; ?>" height="150" width="150"> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
 
