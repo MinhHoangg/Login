@@ -95,7 +95,16 @@ $result = pg_query($db,"SELECT * FROM toy");
 <table align="center" id="customers">
 	<tr><th align='center' width='200'>Name</th><th align='center' width='200'>Price ($)</th><th align='center' width='200'>Quantity</th><th align='center' width='200'>Image</th></tr>
 </table>
-<?php
+<!-- <?php
+echo "<table align='center' id='customers'>";
+while($row=pg_fetch_assoc($result)){echo "<tr>";
+echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
+echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
+echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
+echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"><?php "</td>";
+echo "</tr>";}echo "</table>";?> -->
+<div class="content" id="start-btn">
+  <?php
 echo "<table align='center' id='customers'>";
 while($row=pg_fetch_assoc($result)){echo "<tr>";
 echo "<td align='center' width='200'>" . $row['iname'] . "</td>";
@@ -103,7 +112,6 @@ echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"><?php "</td>";
 echo "</tr>";}echo "</table>";?>
-<div class="content" id="start-btn">
   <button id="start-btn">Snap!</button>
 </div>
 </div>
