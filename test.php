@@ -11,7 +11,7 @@
     <body>
 
       <div class="content">
-        <img src="burger.png" height="600">
+        <img src="img/thor.jpg" height="600">
         <button id="start-btn">Snap!</button>
       </div>   
 
