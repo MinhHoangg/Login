@@ -112,7 +112,7 @@ echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"><?php "</td>";
 echo "</tr>";}echo "</table>";?>
-  <button id="start-btn">Snap!</button>
+  <button id="start-btn" class="button button5">Snap!</button>
 </div>
 </div>
 <script> 
