@@ -77,7 +77,9 @@ table, td, th {
 }
 
 .content {
- 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #start-btn {
  
