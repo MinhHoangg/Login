@@ -103,7 +103,7 @@ echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><div class="content" id="start-btn"><img src="/<?php echo $row['image']; ?>" height="150" width="150"></div><?php "</td>";
 echo "</tr>";}echo "</table>";?>
-<div><button class="button button5" id="start-btn">Snap!</button></div>
+<div class="button button5"><button id="start-btn">Snap!</button></div>
 </div>
 <script> 
     var imageDataArray = [];
