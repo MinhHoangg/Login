@@ -2,7 +2,6 @@
 <html>
     <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="html2canvas.min.js"></script>
     <script src="chance.min.js"></script>
     <script src="jquery-2.1.4.js"></script>
