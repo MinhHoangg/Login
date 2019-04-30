@@ -218,6 +218,7 @@ echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><div class="content"><img src="/<?php echo $row['image']; ?>" height="150" width="150"></div> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
+<button id="start-btn">Snap!</button>
 <!-- <div class="content">
       <img src="img/thor.jpg" height="600">
       <button id="start-btn">Snap!</button>
