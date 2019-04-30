@@ -72,6 +72,13 @@ table, td, th {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .content {
 
 }
