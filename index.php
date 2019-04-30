@@ -67,11 +67,7 @@ table, td, th {
   top: 0px;
   right: 0px;
 }
-.fixed2{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -88,10 +84,9 @@ table, td, th {
 </style>
 </head>
 <div>
-<body align = "center">
+<body align = "center" background="img/pic.png">
 <h1>List of all toy in the ATN Shop</h1>
 <div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5">Refresh</button></form></div>
-<div class="fixed2"><button id="start-btn">Snap!</button></div>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
  port=5432 dbname=d8sto9amrrhb0v user=bsodvujawdtmnt password=e5eb56a54ac2393fca0715e5f0d9e4e8c5c1b5cee85b45edf957bb2c30fbcc4b");
@@ -108,6 +103,7 @@ echo "<td align='center' width='200'>" . $row['price'] . " $" . "</td>";
 echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><div class="content" id="start-btn"><img src="/<?php echo $row['image']; ?>" height="150" width="150"></div><?php "</td>";
 echo "</tr>";}echo "</table>";?>
+<div><button class="button button5" id="start-btn">Snap!</button></div>
 </div>
 <script> 
     var imageDataArray = [];
