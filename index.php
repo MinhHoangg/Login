@@ -107,7 +107,7 @@ $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
 $result = pg_query($db,"SELECT * FROM toy");
 ?>
 <div class="content">
-<div class="fixed2"><button id="start-btn">Snap!</button></div>
+<div class="fixed2"><button id="start-btn" class="button button5">Snap!</button></div>
 <table align="center" id="customers">
 	<tr><th align='center' width='200'>Name</th><th align='center' width='200'>Price ($)</th><th align='center' width='200'>Quantity</th><th align='center' width='200'>Image</th></tr>
 </table>
