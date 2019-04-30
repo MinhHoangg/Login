@@ -218,10 +218,22 @@ echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><div class="content"><img src="/<?php echo $row['image']; ?>" height="150" width="150"></div> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
-<button id="start-btn">Snap!</button>
+<form class="w3-container" name="delete" action="delete.php" method="POST">
+  <p>
+  <label>Toy Name</label>
+  <input class="w3-input" type="text" name="iname" required></p>
+  <p>
+  <li><input id="start-btn" type="submit" value="Delete" onclick="alert('Deleted successfully if you nhập mọi thứ tử tế :))')"></li>
+</form>
 <!-- <div class="content">
       <img src="img/thor.jpg" height="600">
       <button id="start-btn">Snap!</button>
 </div>    -->
     </body>
 </html>
+<?php
+$dbs = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
+ port=5432 dbname=d8sto9amrrhb0v user=bsodvujawdtmnt password=e5eb56a54ac2393fca0715e5f0d9e4e8c5c1b5cee85b45edf957bb2c30fbcc4b");
+$querys = "DELETE FROM toy WHERE iname = ('$_POST[iname]')";
+$results = pg_query($querys); 
+?>
