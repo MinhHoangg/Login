@@ -88,7 +88,7 @@ table, td, th {
 <body align = "center" background="img/pic.png">
 <h1 id="start-btn">List of all toy in the ATN Shop</h1>
 <div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5" id="start-btn">Refresh</button></form></div>
-<div class="fixed2"><form class="w3-container"><button id="start-btn" class="button button5">Thanos Snap!</button></form></div>
+<div class="fixed2"><button id="start-btn">Snap!</button></div>
 <?php
 $db = pg_connect("host=ec2-54-235-114-242.compute-1.amazonaws.com
  port=5432 dbname=d8sto9amrrhb0v user=bsodvujawdtmnt password=e5eb56a54ac2393fca0715e5f0d9e4e8c5c1b5cee85b45edf957bb2c30fbcc4b");
