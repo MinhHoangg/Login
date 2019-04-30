@@ -74,9 +74,7 @@ table, td, th {
 
 .content {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  background: #ddd;
 }
 #start-btn {
  
@@ -86,6 +84,7 @@ table, td, th {
 }
 </style>
 </head>
+<div class="content">
 <body align = "center" background="img/pic.png">
 <h1>List of all toy in the ATN Shop</h1>
 <div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5">Refresh</button></form></div>
@@ -107,6 +106,32 @@ echo "<td align='center' width='200'>" . $row['quantity'] . "</td>";
 echo "<td align='center' width='200'>";?><img src="/<?php echo $row['image']; ?>" height="150" width="150"> <?php "</td>";
 echo "</tr>";}echo "</table>";?>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
