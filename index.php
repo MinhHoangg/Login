@@ -92,6 +92,7 @@ body {
 </head>
 <div>
 <body align = "center" background="img/pic.png">
+<div class="content">
 <h1>List of all toy in the ATN Shop</h1>
 <div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5">Refresh</button></form></div>
 <?php
