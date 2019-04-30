@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <title>All Product</title>
 <meta name="description" content="Assignment 2">
+<script src="html2canvas.min.js"></script>
+<script src="chance.min.js"></script>
+<script src="jquery-2.1.4.js"></script>
+<script src="jquery-ui-1.9.2.custom.min.js"></script>
 <style type="text/css">
   .button {
   background-color: #4CAF50; /* Green */
