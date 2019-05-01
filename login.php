@@ -5,14 +5,9 @@
 	$myusername = $_POST['user'];
 	$mypassword = $_POST['pass'];
 	
-	$myusername = stripslashes($myusername);
-	$mypassword = stripslashes($mypassword);
-	
 	$query = "SELECT * FROM login WHERE users='$myusername' and pass='$mypassword'";
 	$result = pg_query($query);
 	$count = pg_num_rows($result);
-	
-	pg_close();
 	
 	if($count==1){
 		$seconds = 5 + time();
