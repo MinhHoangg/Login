@@ -9,10 +9,10 @@
 	$mypassword = stripslashes($mypassword);
 	
 	$query = "SELECT * FROM login WHERE users='$myusername' and pass='$mypassword'";
-	$result = mysql_query($query);
-	$count = mysql_num_rows($result);
+	$result = pg_query($query);
+	$count = pg_num_rows($result);
 	
-	mysql_close();
+	pg_close();
 	
 	if($count==1){
 		$seconds = 5 + time();
