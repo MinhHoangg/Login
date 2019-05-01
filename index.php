@@ -206,7 +206,7 @@ input[type=text], input[type=password] {
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="login.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img/pic.jpeg" alt="Avatar" class="avatar">
@@ -219,7 +219,8 @@ input[type=text], input[type=password] {
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button type="submit" class="button button5">Login</button>
+      <a href="new_user.php">Signup Here!</a>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
