@@ -175,6 +175,9 @@ span.pass {
       <form class="w3-container" action="insert.php" method="POST"><button class="button button5">Insert Page</button></form>
     </td>
     <td>
+      <form class="w3-container" action="update.php" method="POST"><button class="button button5">Update Page</button></form>
+    </td>
+    <td>
       <form class="w3-container" action="delete.php" method="POST"><button class="button button5">Delete Page</button></form>
     </td>
     <td>
