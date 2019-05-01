@@ -9,6 +9,6 @@
 	if($count==1){
 		header("location:admin.php");
 	}else{
-		echo 'Incorrect Username or Password';
+		header("location:index.php");
 	}
 ?>
