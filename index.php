@@ -206,7 +206,7 @@ input[type=text], input[type=password] {
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="login.php">
+  <form class="modal-content animate" action="login.php" method="POST">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img/pic.jpeg" alt="Avatar" class="avatar">
