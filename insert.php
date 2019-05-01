@@ -63,7 +63,7 @@ list-style: none;
 </form>
 </ul>
 <div align="center">
-  <form class="w3-container" action="index.php" method="POST"><button class="button button5">Product Page</button></form> 
+  <form class="w3-container" action="admin.php" method="POST"><button class="button button5">Product Page</button></form> 
 </div>
 </body>
 </html>
