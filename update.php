@@ -64,7 +64,7 @@ echo "<ul><form name='update' action='update.php' method='POST' >
   <input class='w3-input' type='number' name='quantity' required></p>
   <p>
   <label>Image</label>
-  <input class='w3-input' type='text' value='img/'' name='image' required></p>
+  <input class='w3-input' type='text' value='img/' name='image' required></p>
 <li><input type='submit' value='Update' name='new' onclick='alert('Updated successfully if you nhập mọi thứ tử tế :))')'></li>
 </form>
 </ul>";}
