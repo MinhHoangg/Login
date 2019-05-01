@@ -161,6 +161,12 @@ table, td, th {
   right: 0px;
 }
 
+.fixed2{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -196,7 +202,7 @@ input[type=text], input[type=password] {
 <div class="content">
 <h1>List of all toy in the ATN Shop</h1>
 <div class="fixed"><form class="w3-container" action="index.php" method="POST"><button class="button button5">Refresh</button></form></div>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<div class="fixed2"><button class="button button5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></div>
 
 <div id="id01" class="modal">
   
