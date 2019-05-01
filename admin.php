@@ -13,12 +13,6 @@
   top: 0px;
   left: 0px;
 }
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 table, td, th {
   border: 0px solid black;
 }
