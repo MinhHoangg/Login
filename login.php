@@ -19,6 +19,6 @@
 		setcookie(loggedin, date("F jS - g:i a"), $seconds);
 		header("location:admin.php");
 	}else{
-		echo 'Incorrect Username or Password';
+		header("location:index.php");
 	}
 ?>
