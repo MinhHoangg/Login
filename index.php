@@ -220,12 +220,11 @@ input[type=text], input[type=password] {
       <input type="password" placeholder="Enter Password" name="psw" required>
         
       <button type="submit" class="button button5">Login</button>
-      <a href="new_user.php">Signup Here!</a>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
-
+    <div align="center"><a href="new_user.php">Signup Here!</a></div>
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     </div>
