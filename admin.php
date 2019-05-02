@@ -252,7 +252,7 @@ window.onclick = function(event) {
       <label for="pass"><b>New Password</b></label>
       <input type="password" placeholder="Enter New Password" name="passup" required>
         
-      <button type="submit" class="button button5">Change Password</button>
+      <button type="submit" class="button button5" onclick="alert('Change password successfully if you nhập mọi thứ tử tế :))')">Change Password</button>
     </div>
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
