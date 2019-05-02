@@ -20,12 +20,12 @@ table, td, th {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 8px 16px;
+  padding: 12px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 8px;
-  margin: 2px 1px;
+  font-size: 12px;
+  margin: 3px 1.5px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
