@@ -207,7 +207,7 @@ span.pass {
       <label for="pass"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="pass" required>
         
-      <button type="submit" class="button button5">Sign Up</button>
+      <button type="submit" class="button button5" onclick="alert('Sign up successfully if you nhập mọi thứ tử tế :))')">Sign Up</button>
     </div>
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
