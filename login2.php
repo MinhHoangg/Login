@@ -11,6 +11,6 @@
 		$result = pg_query($query);
 		header("location:admin.php");
 	}else{
-		window.alert("Wrong username or password");
+		header("location:admin.php");
 	}
 ?>
