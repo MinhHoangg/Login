@@ -5,14 +5,12 @@
 	$query = "SELECT * FROM login WHERE users='$_POST[user]' and pass='$_POST[pass]'";
 	$result = pg_query($query);
 	$count = pg_num_rows($result);
-	
+	 
 	if($count==1){
 		$query = "UPDATE login SET pass = '$_POST[passup]' WHERE users = '$_POST[user]'";
 		$result = pg_query($query);
 		header("location:admin.php");
 	}else{
-		$message = "Something wrong!";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-	header("location:admin.php");
+		window.alert("Wrong username or password");
 	}
 ?>
