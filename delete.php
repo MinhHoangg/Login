@@ -48,10 +48,15 @@ list-style: none;
   <label>Toy Name</label>
   <input class="w3-input" type="text" name="iname" required></p>
   <p>
-  <li><input type="submit" value="Delete" onclick="alert('Deleted successfully if you nhập mọi thứ tử tế :))')"></li>
+  <li><input type="submit" value="Delete" onclick="myFunction()"></li>
 </form>
 </ul>
 <form class="w3-container" action="admin.php" method="POST"><button class="button button5">Product Page</button></form>
+<script type="text/javascript">
+  function myFunction() {
+  confirm("Kiểm tra lại tên món đồ chơi vừa nhập\nNếu kiểm tra rồi thì có chắc chắn xoá không?");
+}
+</script>
 </body>
 </html>
 <?php
