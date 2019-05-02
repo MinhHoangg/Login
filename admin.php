@@ -188,10 +188,9 @@ span.pass {
 <table class="fixed2">
 	<tr>
 		<td><button class="button button5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up</button></td>
-	</tr>
-	<tr>
 		<td><button class="button button5" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Edit password</button></td>
 	</tr>
+		
 </table>
 
 <div id="id01" class="modal">
@@ -253,7 +252,7 @@ window.onclick = function(event) {
       <label for="pass"><b>New Password</b></label>
       <input type="password" placeholder="Enter New Password" name="passup" required>
         
-      <button type="submit" class="button button5">Sign Up</button>
+      <button type="submit" class="button button5">Change Password</button>
     </div>
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
