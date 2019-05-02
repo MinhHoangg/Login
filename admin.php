@@ -10,8 +10,8 @@
 }
 .fixed2{
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 15px;
+  left: 15px;
 }
 table, td, th {
   border: 0px solid black;
