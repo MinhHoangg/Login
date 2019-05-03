@@ -1,5 +1,5 @@
-<?php
-include ("login.php");
+<?php include("login.php");?>
+<?
 if($count==1){
     header("location:admin.php");
   }else{
