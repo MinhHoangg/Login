@@ -157,14 +157,14 @@ table, td, th {
 }
 .fixed{
   position: fixed;
-  top: 0px;
-  right: 0px;
+  top: 15px;
+  right: 15px;
 }
 
 .fixed2{
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 15px;
+  left: 15px;
 }
 
 * {
