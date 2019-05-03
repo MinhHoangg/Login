@@ -1,3 +1,12 @@
+<?php
+include ("login.php");
+if($count==1){
+    header("location:admin.php");
+  }else{
+    header("location:index.php");
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
