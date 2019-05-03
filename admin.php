@@ -168,6 +168,9 @@ span.pass {
 </style>
 </head>
 <body align = "center" background="img/pic.png">
+<?php
+  session_start(); 
+?>
 <?php include("permission.php");?>
 <h1>Admin Page of ATN Shop</h1>
 <table class="fixed">
