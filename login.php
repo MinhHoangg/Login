@@ -11,8 +11,8 @@ session_start();
 	
 	if($count==1){
 	$data = pg_fetch_array($query);
-	$_SESSION["user"] = $data["users"];
-	$_SESSION["pass"] = $data["pass"];
+	$_SESSION['user'] = $data['users'];
+	$_SESSION['pass'] = $data['pass'];
 	    
 		header("location:admin.php");
 	}else{
