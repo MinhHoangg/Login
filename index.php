@@ -219,7 +219,7 @@ input[type=text], input[type=password] {
       <label for="pass"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="pass" required>
         
-      <button type="submit" class="button button5" onclick="alert('Turn back to trang Product mean you nhập sai pass or username :))')">Login</button>
+      <button type="submit" class="button button5">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
