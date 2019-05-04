@@ -14,8 +14,8 @@ session_start();
 	$_SESSION['user'] = $data['users'];
 	$_SESSION['pass'] = $data['pass'];
 	    
-		header("location:admin.php");
+	echo "<meta http-equiv='refresh' content='0;url=admin.php' />";
 	}else{
-		header("location:index.php");
+	echo "<meta http-equiv='refresh' content='0;url=' />";
 	}
 ?>
