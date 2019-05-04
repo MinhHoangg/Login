@@ -10,10 +10,10 @@ session_start();
 	$count = pg_num_rows($result);
 	
 	if($count==1){
-		while ( $data = pg_fetch_array($query) ) {
-	    		$_SESSION["users"] = $data["users"];
-				$_SESSION["pass"] = $data["pass"];
-	    	}
+	$data = pg_fetch_array($query)
+		$_SESSION["user"] = $data["users"];
+		$_SESSION["pass"] = $data["pass"];
+	    
 		header("location:admin.php");
 	}else{
 		header("location:index.php");

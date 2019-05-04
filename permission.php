@@ -1,5 +1,6 @@
 <?php
-if (isset($_SESSION["users"]) == false) {
+session_start();
+if (!isset($_SESSION["user"])) {
 	header("location: index.php");
 } else{header("location: admin.php");}
 ?>
