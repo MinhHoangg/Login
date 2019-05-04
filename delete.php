@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+<?php include("permission.php");?>
 <!DOCTYPE html>
 <head>
 <title>Delete Page</title>
