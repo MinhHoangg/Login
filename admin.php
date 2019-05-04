@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+<?php include("permission.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
